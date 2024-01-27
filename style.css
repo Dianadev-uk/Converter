@@ -1,0 +1,60 @@
+:root {
+    --input-backgroundcolor: #2d385b;
+    --output-color: white;
+    --body-color: #a7acba;
+    --input-color: white;
+    --h1-color: #2d385b;
+    
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: var(--body-color);
+}
+
+.container {
+    margin-top: 2em;
+    width: 18em;
+}
+
+.input-container, .output-container {
+    height: 15em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+input {
+    background-color: var(--input-backgroundcolor);
+    height: 3em;
+    width: 5em;
+    font-size: 2em;
+    font-weight: bold;
+    border: none;
+    text-align: center;
+    color: var(--input-color);
+}
+
+input:focus {   
+    outline: none; /*used to delete the border around the input*/
+}
+
+.input-container {
+    background-color: var(--input-backgroundcolor);
+}
+
+.output-container {
+    margin-top: 0.5em;
+    background-color: var(--output-color);
+    width: 100%;
+    word-break: break-all;
+    text-align: center;
+}
+ 
+h1 {
+    color: var(--h1-color) ;
+    padding: 1em;
+}
